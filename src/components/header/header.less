@@ -1,0 +1,43 @@
+.header{
+    width: 100%;
+    height: 4vw;
+    background-color: #fff;
+    color: rgba(0,0,0,.65);
+    .header-top{
+        height: 2vw;
+        line-height: 2vw;
+        text-align: right;
+        border-bottom: 1px solid pink;
+        padding-right: 5vw;
+        font-size: 1vw;
+        .ant-btn{
+            height: 1.2vw;
+            padding:0 0.2vw;
+        }
+        .ant-dropdown-trigger{
+            margin: 0 0.5vw;
+        }
+    }
+    .header-bottom{
+        height: 2vw;
+        display: flex;
+        align-items: center;
+        .header-bottom-left{
+            position: relative;
+            text-align: center;
+            width: 25%;
+            font-size: 1.1vw;
+            font-weight: bold;
+            &::after{
+                position: absolute;
+                left: 50%;
+                top:1.5vw;
+                transform: translateX(-55%);
+                content: '';
+                border:1vw solid transparent;
+                border-top:1vw solid white;
+                
+            }
+        }
+    }
+}
